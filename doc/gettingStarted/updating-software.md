@@ -1,20 +1,20 @@
-# Updating InfiniTime
+# Actualizar InfiniTime
 
-If you just want to flash or upgrade InfiniTime on your PineTime, this page is for you! If you want more information about the software and the update procedure, check out [this](/doc/gettingStarted/about-software.md) page.
+Si solo quiere flashear o actualizar InfiniTime en su PineTime, ¡esta página es para ti! Si quiere mas información sobre el software y el procedimiento de actualización, consulte [esta](/doc/gettingStarted/about-software.md) página.
 
-## Checking the version of InfiniTime
+## Comprobando la versión de InfiniTime
 
-You can check the InfiniTime version by first swiping right on the watch face to open quick settings, tapping the cogwheel to open settings, swipe up until you find an entry named "About" and tap on it.
+Para verificar la versión de InfiniTime, deslize primero el dedo hacia la derecha en la esfera del reloj para abrir la configuración rápida, toque la rueda dentada para abrir la configuración, se deslize hacia arriba hasta encontrar una entrada llamada "Acerca de," y tóquela.
 
 ![InfiniTime 1.0 version](version-1.0.jpg)
 
-PineTimes shipped after June 2021 will ship with the latest version of [the bootloader](https://github.com/JF002/pinetime-mcuboot-bootloader/releases/tag/1.0.0) and [recovery firmware](https://github.com/InfiniTimeOrg/InfiniTime/releases/tag/0.14.1)
+PineTimes enviado después de junio de 2021 se enviará con la última versión de [el gestor de arranque](https://github.com/JF002/pinetime-mcuboot-bootloader/releases/tag/1.0.0) y [firmware de recuperación](https://github.com/InfiniTimeOrg/InfiniTime/releases/tag/0.14.1)
 
-The bootloader is run right before booting into InfiniTime. It is easily recognizable with its white pine cone that is progressively drawn in green. It also displays its own version on the bottom (1.0.0 as of now).
+El gestor de arranque se ejecuta justo antes de iniciar InfiniTime. Es fácilmente reconocible por su piña de pino blanca que progresivamente se va dibujando en verde. También muestra su propia versión en la parte inferior (1.0.0 a partir de ahora).
 
 ![Bootloader 1.0](bootloader-1.0.jpg)
 
-## Updating with companion apps
+## Actualizar con aplicación complementaria
 
 To update your PineTime, you can use one of the [compatible companion applications](/README.md#companion-apps).
 

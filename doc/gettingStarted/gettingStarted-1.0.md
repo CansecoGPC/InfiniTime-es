@@ -1,57 +1,57 @@
-# Getting started with InfiniTime
+# Primeros pasos con InfiniTime
 
-On April 22, 2021, InfiniTime and Pine64 [announced the release of InfiniTime 1.0.0](https://www.pine64.org/2021/04/22/its-time-infinitime-1-0/) and the availability of PineTime smartwatches as an *enthusiast grade end-user product*. This page aims to guide you with your first step with your new PineTime.
+El 22 de abril de 2021, InfiniTime y Pine64 [anunciaron el lanzamiento de InfiniTime 1.0.0](https://www.pine64.org/2021/04/22/its-time-infinitime-1-0/) y la disponibilidad de los relojes inteligentes PineTime como *producto de usuario final de grado entusiasta*. Esta página tiene como objetivo guiarle en el primer paso con su nuevo PineTime.
 
-It is highly recommended to update the firmware to the latest version when you receive your watch and when a new InfiniTime version is released. More information on updating the firmware [here](/doc/gettingStarted/updating-software.md).
+Se recomienda encarecidamente actualizar el firmware a la última versión cuando reciba su reloj y cuando se publique una nueva versión de InfiniTime. Más información sobre la actualización del firmware [aquí](/doc/gettingStarted/updating-software.md).
 
-## InfiniTime quick user guide
+## Guía rápida del usuario de InfiniTime
 
-### Setting the time
+### Configurar la hora
 
-By default, InfiniTime starts on the digital watch face. It'll probably display the epoch time (1 Jan 1970, 00:00).
+De forma predeterminada, InfiniTime se inicia en la esfera del reloj digital. Probablemente mostrará la época (1 de enero de 1970, 00:00).
 
-You can sync the time using companion apps.
+Puede sincronizar la hora usando aplicaciones complementarias.
 
-- Gadgetbridge automatically synchronizes the time when you connect it to your watch. More information on Gadgetbridge [here](/doc/gettingStarted/ota-gadgetbridge.md)
-- [Sync the time with NRFConnect](/doc/gettingStarted/time-nrfconnect.md)
-- Sync the time with your browser https://hubmartin.github.io/WebBLEWatch/
+- Gadgetbridge sincroniza automáticamente la hora cuando lo conectas a tu reloj. Más información sobre Gadgetbridge [aquí](/doc/gettingStarted/ota-gadgetbridge.md)
+- [Sincronizar la hora con NRFConnect](/doc/gettingStarted/time-nrfconnect.md)
+- [Sincronizar la hora con su navegador](https://hubmartin.github.io/WebBLEWatch/)
 
-You can also set the time in the settings without a companion app. (version >1.7.0)
+También puede configurar la hora en la configuración sin una aplicación complementaria. (versión >1.7.0)
 
-InfiniTime doesn't handle daylight savings automatically, so make sure to set the correct time or sync it with a companion app.
+InfiniTime no maneja el horario de verano automáticamente, así que asegúrese de configurar la hora correcta o sincronizarla con una aplicación complementaria.
 
-### Digital watch face
+### Esfera del reloj digital
 
-![Digital watch face](ui/watchface.jpg)
+![Esfera del reloj digital](ui/watchface.jpg)
 
-This is what the default digital watch face looks like. You can change watch faces in the settings.
+Así es como se ve la esfera del reloj digital predeterminada. Usted puede cambiar las esferas del reloj en la configuración.
 
-The indicator on the top left is visible if you have unread notifications
+El indicador en la parte superior izquierda es visible si usted tiene notificaciones no leídas.
 
-On the top right, there are status icons
+En la parte superior derecha, hay iconos de estado:
 
-- The battery icon shows roughly how much charge is remaining
-- The Bluetooth icon is visible when the watch is connected to a companion app
-- A plug icon is shown when the watch is plugged into a charger.
+- El icono de la batería muestra aproximadamente cuánta carga queda.
+- El ícono de Bluetooth es visible cuando el reloj está conectado a una aplicación complementaria.
+- Se muestra un icono de enchufe cuando el reloj está conectado a un cargador.
 
-On the bottom left, you can see your heart rate if you have the measurement enabled in the heart rate app.
+En la parte inferior izquierda, puede ver su frecuencia cardíaca si tiene la medición habilitada en la aplicación de frecuencia cardíaca.
 
-On the bottom right, you can see how many steps you have taken today.
+En la parte inferior derecha, usted puede ver cuántos pasos ha dado hoy.
 
-### Navigation in the menu
+### Navegación en el menú
 
-![Application menu](ui/applist.jpg)
-![Notifications](ui/notifications.jpg)
-![Quick actions](ui/quicksettings.jpg)
-![Settings](ui/settings.jpg)
+![Menú de aplicaciones](ui/applist.jpg)
+![Notificaciones](ui/notificaciones.jpg)
+![Acciones rápidas](ui/quicksettings.jpg)
+![Configuración](ui/settings.jpg)
 
-- Swipe **up** to display the application menus. Apps (stopwatch, music, step, games,...) can be started from this menu.
-- Swipe **down** to display the notification panel. Notification sent by your companion app will be displayed here.
-- Swipe **right** to display the Quick Actions menu. This menu allows you to
-  - Set the brightness of the display
-  - Start the **flashlight** app
-  - Enable/disable notifications (Do Not Disturb mode)
-  - Enter the **settings** menu
-    - Swipe up and down to see all options
-- Click the button to go back a screen.
-- You can hold the button for a short time to return to the watch face. (version >1.7.0)
+- Deslice **hacia arriba** para mostrar los menús de la aplicación. Desde este menú puede iniciar aplicaciones (cronómetro, música, pasos, juegos,...).
+- Deslice **hacia abajo** para mostrar el panel de notificaciones. La notificación enviada por su aplicación complementaria se mostrará aquí.
+- Deslice **derecha** para mostrar el menú de Acciones rápidas. Este menú le permite
+   - Establecer el brillo de la pantalla.
+   - Iniciar la aplicación **linterna**
+   - Activar/desactivar notificaciones (modo No molestar)
+   - Ingresar al menú **configuración**
+     - Deslice hacia arriba y hacia abajo para ver todas las opciones.
+- Haga clic en el botón para retroceder una pantalla.
+- Usted puede mantener presionado el botón por un momento para regresar a la esfera del reloj. (versión >1.7.0)
