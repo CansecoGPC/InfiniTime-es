@@ -49,6 +49,7 @@ namespace Pinetime {
         static constexpr const char* symbol = Symbols::home;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         static constexpr int settingsPerScreen = 4;
 
         // Increment this when more space is needed
@@ -63,6 +64,8 @@ namespace Pinetime {
            {"Casio G7710", Applications::Screens::WatchFaceCasioStyleG7710::IsAvailable(filesystem)},
            {"", false},
            {"", false}}};
+=======
+>>>>>>> main
 =======
 >>>>>>> main
         ScreenList<nScreens> screens;
