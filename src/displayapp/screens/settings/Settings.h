@@ -29,7 +29,7 @@ namespace Pinetime {
         static constexpr int entriesPerScreen = 4;
 
         // Increment this when more space is needed
-        static constexpr int nScreens = 3;
+        static constexpr int nScreens = 4;
 
         static constexpr std::array<List::Applications, entriesPerScreen * nScreens> entries {{
           {Symbols::sun, "Pantalla", Apps::SettingDisplay},
@@ -37,6 +37,7 @@ namespace Pinetime {
           {Symbols::clock, "Formato Horas", Apps::SettingTimeFormat},
           {Symbols::home, "Tema Reloj", Apps::SettingWatchFace},
 
+<<<<<<< HEAD
           {Symbols::shoe, "Pasos", Apps::SettingSteps},
           {Symbols::clock, "Fecha y Hora", Apps::SettingSetDateTime},
           {Symbols::batteryHalf, "Bateria", Apps::BatteryInfo},
@@ -46,6 +47,19 @@ namespace Pinetime {
           {Symbols::check, "Firmware", Apps::FirmwareValidation},
           {Symbols::bluetooth, "Bluetooth", Apps::SettingBluetooth},
           {Symbols::list, "Acerca de", Apps::SysInfo},
+=======
+          {Symbols::shoe, "Steps", Apps::SettingSteps},
+          {Symbols::clock, "Date&Time", Apps::SettingSetDateTime},
+          {Symbols::cloudSunRain, "Weather", Apps::SettingWeatherFormat},
+          {Symbols::batteryHalf, "Battery", Apps::BatteryInfo},
+
+          {Symbols::clock, "Chimes", Apps::SettingChimes},
+          {Symbols::tachometer, "Shake Calib.", Apps::SettingShakeThreshold},
+          {Symbols::check, "Firmware", Apps::FirmwareValidation},
+          {Symbols::bluetooth, "Bluetooth", Apps::SettingBluetooth},
+
+          {Symbols::list, "About", Apps::SysInfo},
+>>>>>>> main
 
           // {Symbols::none, "None", Apps::None},
           // {Symbols::none, "None", Apps::None},

@@ -19,7 +19,16 @@ namespace Pinetime {
 
       class SettingWatchFace : public Screen {
       public:
-        SettingWatchFace(DisplayApp* app, Pinetime::Controllers::Settings& settingsController, Pinetime::Controllers::FS& filesystem);
+        struct Item {
+          const char* name;
+          WatchFace watchface;
+          bool enabled;
+        };
+
+        SettingWatchFace(DisplayApp* app,
+                         std::array<Item, UserWatchFaceTypes::Count>&& watchfaceItems,
+                         Pinetime::Controllers::Settings& settingsController,
+                         Pinetime::Controllers::FS& filesystem);
         ~SettingWatchFace() override;
 
         bool OnTouchEvent(TouchEvents event) override;
@@ -29,12 +38,17 @@ namespace Pinetime {
         auto CreateScreenList() const;
         std::unique_ptr<Screen> CreateScreen(unsigned int screenNum) const;
 
+        static constexpr int settingsPerScreen = 4;
+        std::array<Item, UserWatchFaceTypes::Count> watchfaceItems;
+        static constexpr int nScreens = UserWatchFaceTypes::Count > 0 ? (UserWatchFaceTypes ::Count - 1) / settingsPerScreen + 1 : 1;
+
         Controllers::Settings& settingsController;
         Pinetime::Controllers::FS& filesystem;
 
         static constexpr const char* title = "Tema Reloj";
         static constexpr const char* symbol = Symbols::home;
 
+<<<<<<< HEAD
         static constexpr int settingsPerScreen = 4;
 
         // Increment this when more space is needed
@@ -49,6 +63,8 @@ namespace Pinetime {
            {"Casio G7710", Applications::Screens::WatchFaceCasioStyleG7710::IsAvailable(filesystem)},
            {"", false},
            {"", false}}};
+=======
+>>>>>>> main
         ScreenList<nScreens> screens;
       };
     }
