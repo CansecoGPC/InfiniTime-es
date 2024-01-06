@@ -48,26 +48,6 @@ namespace Pinetime {
         static constexpr const char* title = "Tema Reloj";
         static constexpr const char* symbol = Symbols::home;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-        static constexpr int settingsPerScreen = 4;
-
-        // Increment this when more space is needed
-        static constexpr int nScreens = 2;
-
-        std::array<Screens::CheckboxList::Item, settingsPerScreen * nScreens> watchfaces {
-          {{"Tema Digital", true},
-           {"Tema Analogic", true},
-           {"PineTimeStyle", true},
-           {"Terminal", true},
-           {"Tema Infineat", Applications::Screens::WatchFaceInfineat::IsAvailable(filesystem)},
-           {"Casio G7710", Applications::Screens::WatchFaceCasioStyleG7710::IsAvailable(filesystem)},
-           {"", false},
-           {"", false}}};
-=======
->>>>>>> main
-=======
->>>>>>> main
         ScreenList<nScreens> screens;
       };
     }

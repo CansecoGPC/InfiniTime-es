@@ -16,7 +16,7 @@ namespace {
   };
 
   constexpr std::array<Option, 2> options = {{
-    {Pinetime::Controllers::Settings::WeatherFormat::Metric, "Metric"},
+    {Pinetime::Controllers::Settings::WeatherFormat::Metric, "Metrico"},
     {Pinetime::Controllers::Settings::WeatherFormat::Imperial, "Imperial"},
   }};
 
@@ -48,7 +48,7 @@ SettingWeatherFormat::SettingWeatherFormat(Pinetime::Controllers::Settings& sett
   : checkboxList(
       0,
       1,
-      "Weather format",
+      "Fomato tiempo",
       Symbols::cloudSunRain,
       GetDefaultOption(settingsController.GetWeatherFormat()),
       [&settings = settingsController](uint32_t index) {

@@ -37,29 +37,17 @@ namespace Pinetime {
           {Symbols::clock, "Formato Horas", Apps::SettingTimeFormat},
           {Symbols::home, "Tema Reloj", Apps::SettingWatchFace},
 
-<<<<<<< HEAD
           {Symbols::shoe, "Pasos", Apps::SettingSteps},
           {Symbols::clock, "Fecha y Hora", Apps::SettingSetDateTime},
           {Symbols::batteryHalf, "Bateria", Apps::BatteryInfo},
+          {Symbols::cloudSunRain, "Tiempo", Apps::SettingWeatherFormat},
+          
           {Symbols::clock, "Campanadas", Apps::SettingChimes},
-
           {Symbols::tachometer, "Meneo Calib.", Apps::SettingShakeThreshold},
           {Symbols::check, "Firmware", Apps::FirmwareValidation},
           {Symbols::bluetooth, "Bluetooth", Apps::SettingBluetooth},
+
           {Symbols::list, "Acerca de", Apps::SysInfo},
-=======
-          {Symbols::shoe, "Steps", Apps::SettingSteps},
-          {Symbols::clock, "Date&Time", Apps::SettingSetDateTime},
-          {Symbols::cloudSunRain, "Weather", Apps::SettingWeatherFormat},
-          {Symbols::batteryHalf, "Battery", Apps::BatteryInfo},
-
-          {Symbols::clock, "Chimes", Apps::SettingChimes},
-          {Symbols::tachometer, "Shake Calib.", Apps::SettingShakeThreshold},
-          {Symbols::check, "Firmware", Apps::FirmwareValidation},
-          {Symbols::bluetooth, "Bluetooth", Apps::SettingBluetooth},
-
-          {Symbols::list, "About", Apps::SysInfo},
->>>>>>> main
 
           // {Symbols::none, "None", Apps::None},
           // {Symbols::none, "None", Apps::None},
