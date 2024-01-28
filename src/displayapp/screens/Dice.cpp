@@ -166,10 +166,10 @@ void Dice::Roll() {
     if (dCounter.GetValue() == 2) {
       switch (resultTotal) {
         case 1:
-          lv_label_set_text(resultIndividualLabel, "HEADS");
+          lv_label_set_text(resultIndividualLabel, "CARA");
           break;
         case 2:
-          lv_label_set_text(resultIndividualLabel, "TAILS");
+          lv_label_set_text(resultIndividualLabel, "CRUZ");
           break;
       }
     }
