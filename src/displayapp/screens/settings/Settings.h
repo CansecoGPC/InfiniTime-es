@@ -32,6 +32,7 @@ namespace Pinetime {
         static constexpr int nScreens = 4;
 
         static constexpr std::array<List::Applications, entriesPerScreen * nScreens> entries {{
+<<<<<<< HEAD
           {Symbols::sun, "Pantalla", Apps::SettingDisplay},
           {Symbols::eye, "Despertar", Apps::SettingWakeUp},
           {Symbols::clock, "Formato Horas", Apps::SettingTimeFormat},
@@ -44,6 +45,20 @@ namespace Pinetime {
           
           {Symbols::clock, "Campanadas", Apps::SettingChimes},
           {Symbols::tachometer, "Meneo Calib.", Apps::SettingShakeThreshold},
+=======
+          {Symbols::sun, "Display", Apps::SettingDisplay},
+          {Symbols::eye, "Wake Up", Apps::SettingWakeUp},
+          {Symbols::clock, "Time format", Apps::SettingTimeFormat},
+          {Symbols::home, "Watch face", Apps::SettingWatchFace},
+
+          {Symbols::shoe, "Steps", Apps::SettingSteps},
+          {Symbols::clock, "Date & Time", Apps::SettingSetDateTime},
+          {Symbols::cloudSunRain, "Weather", Apps::SettingWeatherFormat},
+          {Symbols::batteryHalf, "Battery", Apps::BatteryInfo},
+
+          {Symbols::clock, "Chimes", Apps::SettingChimes},
+          {Symbols::tachometer, "Shake Calib.", Apps::SettingShakeThreshold},
+>>>>>>> main
           {Symbols::check, "Firmware", Apps::FirmwareValidation},
           {Symbols::bluetooth, "Bluetooth", Apps::SettingBluetooth},
 

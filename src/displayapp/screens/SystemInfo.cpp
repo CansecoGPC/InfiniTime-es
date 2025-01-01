@@ -40,8 +40,7 @@ SystemInfo::SystemInfo(Pinetime::Applications::DisplayApp* app,
                        Pinetime::Controllers::MotionController& motionController,
                        const Pinetime::Drivers::Cst816S& touchPanel,
                        const Pinetime::Drivers::SpiNorFlash& spiNorFlash)
-  : app {app},
-    dateTimeController {dateTimeController},
+  : dateTimeController {dateTimeController},
     batteryController {batteryController},
     brightnessController {brightnessController},
     bleController {bleController},
@@ -196,7 +195,7 @@ std::unique_ptr<Screen> SystemInfo::CreateScreen3() {
                         "#808080 SPI Flash# %02x-%02x-%02x\n"
                         "\n"
                         "#808080 Memory heap#\n"
-                        " #808080 Free# %d\n"
+                        " #808080 Free# %d/%d\n"
                         " #808080 Min free# %d\n"
                         " #808080 Alloc err# %d\n"
                         " #808080 Ovrfl err# %d\n",
@@ -210,6 +209,7 @@ std::unique_ptr<Screen> SystemInfo::CreateScreen3() {
                         spiFlashId.type,
                         spiFlashId.density,
                         xPortGetFreeHeapSize(),
+                        xPortGetHeapSize(),
                         xPortGetMinimumEverFreeHeapSize(),
                         mallocFailedCount,
                         stackOverflowCount);
