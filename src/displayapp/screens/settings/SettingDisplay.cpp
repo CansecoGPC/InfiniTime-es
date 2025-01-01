@@ -64,7 +64,7 @@ SettingDisplay::SettingDisplay(Pinetime::Controllers::Settings& settingsControll
   }
 
   alwaysOnCheckbox = lv_checkbox_create(container1, nullptr);
-  lv_checkbox_set_text(alwaysOnCheckbox, "Always On");
+  lv_checkbox_set_text(alwaysOnCheckbox, "Siempre On");
   lv_checkbox_set_checked(alwaysOnCheckbox, settingsController.GetAlwaysOnDisplaySetting());
   lv_obj_add_state(alwaysOnCheckbox, LV_STATE_DEFAULT);
   alwaysOnCheckbox->user_data = this;
