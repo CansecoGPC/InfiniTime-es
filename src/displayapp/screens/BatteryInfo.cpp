@@ -55,46 +55,26 @@ void BatteryInfo::Refresh() {
   batteryVoltage = batteryController.Voltage();
 
   if (batteryController.IsCharging()) {
-<<<<<<< HEAD
-    lv_obj_set_style_local_bg_color(charging_bar, LV_BAR_PART_INDIC, LV_STATE_DEFAULT, LV_COLOR_RED);
+    lv_obj_set_style_local_line_color(chargingArc, LV_ARC_PART_INDIC, LV_STATE_DEFAULT, LV_COLOR_LIME);
     lv_label_set_text_static(status, "Cargando");
   } else if (batteryPercent == 100) {
-    lv_obj_set_style_local_bg_color(charging_bar, LV_BAR_PART_INDIC, LV_STATE_DEFAULT, LV_COLOR_BLUE);
-    lv_label_set_text_static(status, "Cargado");
-  } else if (batteryPercent < 10) {
-    lv_obj_set_style_local_bg_color(charging_bar, LV_BAR_PART_INDIC, LV_STATE_DEFAULT, LV_COLOR_YELLOW);
-    lv_label_set_text_static(status, "Bateria baja");
-  } else {
-    lv_obj_set_style_local_bg_color(charging_bar, LV_BAR_PART_INDIC, LV_STATE_DEFAULT, Colors::highlight);
-    lv_label_set_text_static(status, "Descargando");
-=======
-    lv_obj_set_style_local_line_color(chargingArc, LV_ARC_PART_INDIC, LV_STATE_DEFAULT, LV_COLOR_LIME);
-    lv_label_set_text_static(status, "Charging");
-  } else if (batteryPercent == 100) {
     lv_obj_set_style_local_line_color(chargingArc, LV_ARC_PART_INDIC, LV_STATE_DEFAULT, LV_COLOR_BLUE);
-    lv_label_set_text_static(status, "Fully charged");
+    lv_label_set_text_static(status, "Cargado");
   } else if (batteryPercent > 15) {
     lv_obj_set_style_local_line_color(chargingArc, LV_ARC_PART_INDIC, LV_STATE_DEFAULT, LV_COLOR_GREEN);
-    lv_label_set_text_static(status, "Discharging");
+    lv_label_set_text_static(status, "Descargando");
   } else if (batteryPercent > 5) {
     lv_obj_set_style_local_line_color(chargingArc, LV_ARC_PART_INDIC, LV_STATE_DEFAULT, LV_COLOR_ORANGE);
-    lv_label_set_text_static(status, "Battery low");
+    lv_label_set_text_static(status, "Bateria baja");
   } else {
     lv_obj_set_style_local_line_color(chargingArc, LV_ARC_PART_INDIC, LV_STATE_DEFAULT, Colors::deepOrange);
-    lv_label_set_text_static(status, "Battery critical");
->>>>>>> main
+    lv_label_set_text_static(status, "Bateria crítica");
   }
 
   lv_label_set_text_fmt(percent, "%i%%", batteryPercent);
   lv_obj_align(percent, chargingArc, LV_ALIGN_CENTER, 0, 0);
 
-<<<<<<< HEAD
-  lv_obj_align(status, charging_bar, LV_ALIGN_OUT_BOTTOM_MID, 0, 20);
-  lv_label_set_text_fmt(voltage, "%1i.%02i voltios", batteryVoltage / 1000, batteryVoltage % 1000 / 10);
-  lv_bar_set_value(charging_bar, batteryPercent, LV_ANIM_ON);
-=======
   lv_obj_align(status, voltage, LV_ALIGN_IN_BOTTOM_MID, 0, -27);
-  lv_label_set_text_fmt(voltage, "%1i.%02i volts", batteryVoltage / 1000, batteryVoltage % 1000 / 10);
+  lv_label_set_text_fmt(voltage, "%1i.%02i voltios", batteryVoltage / 1000, batteryVoltage % 1000 / 10);
   lv_arc_set_value(chargingArc, batteryPercent);
->>>>>>> main
 }
